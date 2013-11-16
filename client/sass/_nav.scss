@@ -2,17 +2,23 @@ nav {
 	//FIX WITH STICKY FOOTER ?
 	position: absolute;
 	bottom: 0;
-	
+
 	width: 100%;
 	height: 100px;
 	background: $black;
 
 	ul {
-		margin: 0;
+		width: 500px;
+		margin: 0 auto;
 		padding: 0;
 	}
 
 	li {
 		display: inline-block;	
+		margin-right: 50px;
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 }
