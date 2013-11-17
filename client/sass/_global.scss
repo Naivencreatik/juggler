@@ -4,10 +4,11 @@ html, body {
 }
 
 body {
-	position: relative;
-	background: $bg;
+	background: url($bg) no-repeat;
 	background-size: cover;
 	color: $white;
+
+	//CHOISIR TYPO
 	font: 14px/1 Impact, Arial, sans-serif;
 	text-transform: uppercase;
 }
@@ -15,16 +16,24 @@ body {
 a {
 	color: $white;
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .home {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	@include translate(-50%, -50%);
+	position: relative;
 	width: 100%;
-	height: auto;
-	text-align: center;
+	height: 100%;
+
+	.home-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include translate(-50%, -50%);
+		text-align: center;
+	}
 
 	h1 {
 		font-size: 100px;
@@ -33,4 +42,11 @@ a {
 	h2 {
 		font-size: 50px;
 	}
+}
+
+.bio,
+.spectacle {
+	width: 100%;
+	height: $section-height;
+	min-height: 500px;
 }
