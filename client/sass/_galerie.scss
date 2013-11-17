@@ -1,0 +1,28 @@
+.galerie {
+	width: 100%;
+	height: 100%;
+	background-color: blue;
+
+	//MUST PUT A GRID
+	.big {
+		// To style
+		img {
+			display: inline-block;
+			width: 500px;
+			height: 500px;
+			background-color: $black;
+		}
+	}
+
+	.little {
+		// To style
+		img {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			background-color: $black;
+			border: 2px solid $white;
+		}
+	}
+
+}
