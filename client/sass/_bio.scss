@@ -1,21 +1,27 @@
 .bio {
-	background-color: green;
+
+	padding: $padding-section;
 
 	img {
 		display: inline-block;
 		//DUMMY SIZES
-		width: 500px;
-		height: 500px;
+		width: 45%;
+		height: 350px;
+		margin:0 25px 0 0;
 		vertical-align: middle;
 		//to remove
 		background-color: $black;
 	}
 
-	p {
-		display: inline-block;
-		width: 800px;
-		height: 500px;
+	h2 {
 		font-size: 26px;
-		vertical-align: middle;
+		margin-bottom: 15px;
+		color: $black;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 20px;
+		color: $black;
 	}
 }

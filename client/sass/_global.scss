@@ -9,8 +9,7 @@ body {
 	color: $white;
 
 	//CHOISIR TYPO
-	font: 14px/1 Impact, Arial, sans-serif;
-	text-transform: uppercase;
+	font: 14px/1 Arial, sans-serif;
 }
 
 a {
@@ -39,6 +38,16 @@ a {
 .bio,
 .spectacle {
 	width: 100%;
-	height: $section-height;
-	min-height: 500px;
+}
+
+.center {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.texte{
+	display: inline-block;
+	height: 350px;
+	width: 50%;
+	vertical-align: middle;
 }

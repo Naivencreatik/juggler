@@ -2,6 +2,7 @@ nav {
 	//FIX WITH STICKY FOOTER ?
 	position: absolute;
 	bottom: 0;
+	z-index: 2;
 
 	width: 100%;
 	height: $nav-height;
@@ -30,5 +31,9 @@ nav {
 		&:last-child {
 			margin-right: 0;
 		}
+	}
+
+	a {
+		text-transform: uppercase;
 	}
 }
