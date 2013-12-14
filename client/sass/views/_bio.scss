@@ -1,17 +1,11 @@
-.spectacle {
+.bio {
 
 	padding: $padding-section;
-	background-color: #e1e1e1;
 
 	img {
 		display: inline-block;
-		//DUMMY SIZES
-		width: 45%;
-		height: 350px;
-		margin:0 0 0 25px;
+		margin:0 25px 0 0;
 		vertical-align: middle;
-		//to remove
-		background-color: $black;
 	}
 
 	h2 {

@@ -5,45 +5,53 @@
 <body>
 	<nav>
 		<div class="nav-logo">
-			<a href="">
+			<a href="#">
 				Brice Pezon
 			</a>
 		</div>
 
 		<ul>
 			<li>
-				<a href="">
+				<a href="#bio">
 					bio
 				</a>
 			</li>
 
 			<li>
-				<a href="">
+				<a href="#spectacle">
 					spectacle
 				</a>
 			</li>
 
 			<li>
-				<a href="">
+				<a href="#gallery">
 					galerie
 				</a>
 			</li>
 
 			<li>
-				<a href="">
+				<a href="#blog">
 					blog
 				</a>
 			</li>
 
 			<li>
-				<a href="">
+				<a href="#contact">
 					contact
 				</a>
 			</li>
 		</ul>
 	</nav>
 
-	<section class="home">
+	<section id="home" class="home">
+
+		<!-- <div id="video-controls">
+			<button class="tubular-play icon-play"></button>
+			<button class="tubular-pause icon-pause"></button>
+			<button class="tubular-volume-up icon-volume-up"></button>
+			<button class="tubular-volume-down icon-volume-down"></button>
+			<button class="tubular-mute icon-volume-mute"></button>
+		</div> -->
 
 		<div class="home-content">
 			<img src="img/logo.png" width="438" height="489">
@@ -52,11 +60,11 @@
 	</section>
 
 
-	<section class="bio">
+	<section id="bio" class="bio" data-speed="30" data-type="slide">
 
 		<div class="bio-content center">
 
-			<img src="http://dummyimage.com/460x350/858585/ffffff" width="460" height="350">
+			<img src="img/velo.png" width="314" height="510">
 
 			<div class="texte">
 			
@@ -80,9 +88,11 @@
 
 	</section>
 
-	<section class="spectacle">
+	<section id="spectacle" class="spectacle" data-speed="30" data-type="slide">
 
 		<div class="spectacle-content center">
+
+			<img src="img/chute.png" width="314" height="510">
 
 			<div class="texte">
 
@@ -105,13 +115,11 @@
 
 			</div>
 
-			<img src="http://dummyimage.com/460x350/858585/ffffff" width="460" height="350">
-
 		</div>
 
 	</section>
 
-	<section class="galerie">
+	<section id="gallery" class="gallery" data-speed="10" data-type="slide">
 
 		<figure class="big">
 			<img src="" width="" height="">
@@ -124,9 +132,3 @@
 	</section>
 
 </body>
-
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
-</template>

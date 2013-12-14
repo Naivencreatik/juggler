@@ -1,19 +1,20 @@
-if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to juggler.";
-  };
+$(document).ready(function(){
+    $window = $(window);
 
-  Template.hello.events({
-    'click input' : function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
-    }
-  });
-}
+    $('section[data-type="slide"]').each(function(){
+        var $bgobj = $(this); // assigning the object
+                        
+        $(window).scroll(function() {
+            var yPos = -($window.scrollTop() / $bgobj.data('speed') - 100);
+            var coords = '50% '+ yPos + 'px';
 
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+            $bgobj.css({ backgroundPosition: coords });
+        });
+    });
+
+    // var options = { videoId: '-yHAAel9hhw', repeat: true, mute: false };
+
+    // $('#home').tubular(options);
+});
+
+document.createElement("section");

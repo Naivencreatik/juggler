@@ -1,10 +1,14 @@
 @import "compass";
 @import "compass/css3";
 @import "compass/reset";
+
 @import "mixins";
 @import "variables";
+
+@import "init/icons";
+
 @import "global";
-@import "nav";
-@import "bio";
-@import "spectacle";
-@import "galerie";
+@import "views/nav";
+@import "views/bio";
+@import "views/spectacle";
+@import "views/gallery";

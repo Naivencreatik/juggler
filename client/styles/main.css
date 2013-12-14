@@ -1,0 +1,406 @@
+/* line 17, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icons/icomoon.eot");
+  src: url("../icons/icomoon.eot?#iefix") format("embedded-opentype"), url("../icons/icomoon.ttf") format("truetype"), url("../icons/icomoon.woff") format("woff"), url("../icons/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, ../sass/init/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, ../sass/init/_icons.scss */
+.icon-play:before {
+  content: "\e380";
+}
+
+/* line 29, ../sass/init/_icons.scss */
+.icon-pause:before {
+  content: "\e381";
+}
+
+/* line 32, ../sass/init/_icons.scss */
+.icon-volume-down:before {
+  content: "\e395";
+}
+
+/* line 35, ../sass/init/_icons.scss */
+.icon-volume-up:before {
+  content: "\e394";
+}
+
+/* line 38, ../sass/init/_icons.scss */
+.icon-volume-mute:before {
+  content: "\e393";
+}
+
+/* line 3, ../sass/_global.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/_global.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 12, ../sass/_global.scss */
+body {
+  font: 14px/1 Arial, sans-serif;
+  color: white;
+}
+
+/* line 17, ../sass/_global.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* line 21, ../sass/_global.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 26, ../sass/_global.scss */
+.home {
+  width: 100%;
+  height: 100%;
+}
+/* line 30, ../sass/_global.scss */
+.home .home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* line 41, ../sass/_global.scss */
+.bio,
+.spectacle,
+.gallery {
+  width: 100%;
+  height: 800px;
+}
+
+/* line 46, ../sass/_global.scss */
+.bio {
+  position: relative;
+  background-color: #2a9ae2;
+  overflow: hidden;
+}
+/* line 16, ../sass/_mixins.scss */
+.bio:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-transform: skewX(70deg) translateX(5%);
+  -moz-transform: skewX(70deg) translateX(5%);
+  -ms-transform: skewX(70deg) translateX(5%);
+  -o-transform: skewX(70deg) translateX(5%);
+  transform: skewX(70deg) translateX(5%);
+}
+/* line 27, ../sass/_mixins.scss */
+.bio:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transform: skewX(50deg) translateX(30%);
+  -moz-transform: skewX(50deg) translateX(30%);
+  -ms-transform: skewX(50deg) translateX(30%);
+  -o-transform: skewX(50deg) translateX(30%);
+  transform: skewX(50deg) translateX(30%);
+}
+
+/* line 50, ../sass/_global.scss */
+.spectacle {
+  position: relative;
+  background-color: #f7862a;
+  overflow: hidden;
+}
+/* line 16, ../sass/_mixins.scss */
+.spectacle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-transform: skewX(-30deg) translateX(15%);
+  -moz-transform: skewX(-30deg) translateX(15%);
+  -ms-transform: skewX(-30deg) translateX(15%);
+  -o-transform: skewX(-30deg) translateX(15%);
+  transform: skewX(-30deg) translateX(15%);
+}
+/* line 27, ../sass/_mixins.scss */
+.spectacle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transform: skewX(-50deg) translateX(40%);
+  -moz-transform: skewX(-50deg) translateX(40%);
+  -ms-transform: skewX(-50deg) translateX(40%);
+  -o-transform: skewX(-50deg) translateX(40%);
+  transform: skewX(-50deg) translateX(40%);
+}
+
+/* line 54, ../sass/_global.scss */
+.gallery {
+  position: relative;
+  background-color: #907eb2;
+  overflow: hidden;
+}
+/* line 16, ../sass/_mixins.scss */
+.gallery:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-transform: skewX(70deg) translateX(5%);
+  -moz-transform: skewX(70deg) translateX(5%);
+  -ms-transform: skewX(70deg) translateX(5%);
+  -o-transform: skewX(70deg) translateX(5%);
+  transform: skewX(70deg) translateX(5%);
+}
+/* line 27, ../sass/_mixins.scss */
+.gallery:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transform: skewX(50deg) translateX(30%);
+  -moz-transform: skewX(50deg) translateX(30%);
+  -ms-transform: skewX(50deg) translateX(30%);
+  -o-transform: skewX(50deg) translateX(30%);
+  transform: skewX(50deg) translateX(30%);
+}
+
+/* line 58, ../sass/_global.scss */
+.center {
+  position: relative;
+  z-index: 2;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 65, ../sass/_global.scss */
+.texte {
+  display: inline-block;
+  height: 350px;
+  width: 50%;
+  vertical-align: middle;
+}
+
+/* line 72, ../sass/_global.scss */
+#tubular-container {
+  position: absolute !important;
+}
+
+/* line 1, ../sass/views/_nav.scss */
+nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  background: black;
+}
+/* line 12, ../sass/views/_nav.scss */
+nav .nav-logo {
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  padding: 0 0 0 25px;
+}
+/* line 19, ../sass/views/_nav.scss */
+nav ul {
+  display: block;
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 50px;
+}
+/* line 28, ../sass/views/_nav.scss */
+nav li {
+  display: inline-block;
+  margin-right: 50px;
+}
+/* line 32, ../sass/views/_nav.scss */
+nav li:last-child {
+  margin-right: 0;
+}
+/* line 37, ../sass/views/_nav.scss */
+nav a {
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/views/_bio.scss */
+.bio {
+  padding: 75px 0 75px 0;
+}
+/* line 5, ../sass/views/_bio.scss */
+.bio img {
+  display: inline-block;
+  margin: 0 25px 0 0;
+  vertical-align: middle;
+}
+/* line 11, ../sass/views/_bio.scss */
+.bio h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: black;
+  text-transform: uppercase;
+}
+/* line 18, ../sass/views/_bio.scss */
+.bio p {
+  font-size: 20px;
+  color: black;
+}
+
+/* line 1, ../sass/views/_spectacle.scss */
+.spectacle {
+  padding: 75px 0 75px 0;
+}
+/* line 4, ../sass/views/_spectacle.scss */
+.spectacle img {
+  display: inline-block;
+  margin: 0 0 0 25px;
+  vertical-align: middle;
+}
+/* line 10, ../sass/views/_spectacle.scss */
+.spectacle h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: black;
+  text-transform: uppercase;
+}
+/* line 17, ../sass/views/_spectacle.scss */
+.spectacle p {
+  font-size: 20px;
+  color: black;
+}
+
+/* line 1, ../sass/views/_gallery.scss */
+.gallery {
+  width: 100%;
+}
+/* line 7, ../sass/views/_gallery.scss */
+.gallery .big img {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+}
+/* line 17, ../sass/views/_gallery.scss */
+.gallery .little img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border: 2px solid white;
+}
