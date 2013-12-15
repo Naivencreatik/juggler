@@ -1283,9 +1283,10 @@ a:hover {
 /* line 26, ../sass/init/_global.scss */
 #main {
   position: relative;
+  height: 100%;
 }
 
-/* line 30, ../sass/init/_global.scss */
+/* line 31, ../sass/init/_global.scss */
 .home {
   position: relative;
   width: 100%;
@@ -1296,7 +1297,7 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 37, ../sass/init/_global.scss */
+/* line 38, ../sass/init/_global.scss */
 .home .home-content {
   position: absolute;
   top: 50%;
@@ -1309,21 +1310,21 @@ a:hover {
   text-align: center;
 }
 
-/* line 48, ../sass/init/_global.scss */
+/* line 49, ../sass/init/_global.scss */
 .bio,
 .show,
 .gallery {
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
-/* line 52, ../sass/init/_global.scss */
+/* line 53, ../sass/init/_global.scss */
 .bio img,
 .show img,
 .gallery img {
   position: relative;
 }
 
-/* line 57, ../sass/init/_global.scss */
+/* line 58, ../sass/init/_global.scss */
 .bio {
   position: relative;
   background-color: #2a9ae2;
@@ -1360,7 +1361,7 @@ a:hover {
   transform: skewX(50deg) translateX(30%);
 }
 
-/* line 61, ../sass/init/_global.scss */
+/* line 62, ../sass/init/_global.scss */
 .show {
   position: relative;
   background-color: #f7862a;
@@ -1397,7 +1398,7 @@ a:hover {
   transform: skewX(-50deg) translateX(40%);
 }
 
-/* line 65, ../sass/init/_global.scss */
+/* line 66, ../sass/init/_global.scss */
 .gallery {
   position: relative;
   background-color: #907eb2;
@@ -1434,7 +1435,7 @@ a:hover {
   transform: skewX(50deg) translateX(30%);
 }
 
-/* line 69, ../sass/init/_global.scss */
+/* line 70, ../sass/init/_global.scss */
 .center {
   position: relative;
   z-index: 2;
@@ -1442,27 +1443,239 @@ a:hover {
   margin: 0 auto;
 }
 
-/* line 77, ../sass/init/_global.scss */
+/* line 78, ../sass/init/_global.scss */
 .img-content,
 .text-content {
   float: left;
   width: 50%;
 }
 
-/* line 82, ../sass/init/_global.scss */
+/* line 83, ../sass/init/_global.scss */
 .text-content {
   padding: 115px 0;
 }
 
-/* line 86, ../sass/init/_global.scss */
+/* line 87, ../sass/init/_global.scss */
 .text {
   width: 50%;
   height: 350px;
 }
 
-/* line 91, ../sass/init/_global.scss */
+/* line 92, ../sass/init/_global.scss */
 #tubular-container {
   position: absolute !important;
+}
+
+/* line 96, ../sass/init/_global.scss */
+#superContainer {
+  position: relative;
+  height: 100%;
+}
+
+/* line 101, ../sass/init/_global.scss */
+.section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 106, ../sass/init/_global.scss */
+.slide {
+  float: left;
+}
+
+/* line 111, ../sass/init/_global.scss */
+.slide,
+.slidesContainer {
+  display: block;
+  height: 100%;
+}
+
+/* line 116, ../sass/init/_global.scss */
+.slides {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 124, ../sass/init/_global.scss */
+.section.table,
+.slide.table {
+  display: table;
+  width: 100%;
+}
+
+/* line 129, ../sass/init/_global.scss */
+.tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 136, ../sass/init/_global.scss */
+.slidesContainer {
+  float: left;
+  position: relative;
+}
+
+/* line 141, ../sass/init/_global.scss */
+.controlArrow {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  width: 0px;
+  height: 0px;
+  margin-top: -38px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+/* line 152, ../sass/init/_global.scss */
+.controlArrow.prev {
+  left: 15px;
+  width: 0px;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+/* line 159, ../sass/init/_global.scss */
+.controlArrow.next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* line 165, ../sass/init/_global.scss */
+.scrollable {
+  overflow: scroll;
+}
+
+/* line 169, ../sass/init/_global.scss */
+.easing {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+/* line 173, ../sass/init/_global.scss */
+#fullPage-nav {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  margin-top: -32px;
+  opacity: 1;
+}
+
+/* line 181, ../sass/init/_global.scss */
+#fullPage-nav.right {
+  right: 17px;
+}
+
+/* line 185, ../sass/init/_global.scss */
+#fullPage-nav.left {
+  left: 17px;
+}
+
+/* line 189, ../sass/init/_global.scss */
+.fullPage-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+}
+
+/* line 196, ../sass/init/_global.scss */
+.fullPage-slidesNav.bottom {
+  bottom: 17px;
+}
+
+/* line 200, ../sass/init/_global.scss */
+.fullPage-slidesNav.top {
+  top: 17px;
+}
+
+/* line 205, ../sass/init/_global.scss */
+#fullPage-nav ul,
+.fullPage-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 211, ../sass/init/_global.scss */
+#fullPage-nav li,
+.fullPage-slidesNav li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+
+/* line 219, ../sass/init/_global.scss */
+.fullPage-slidesNav li {
+  display: inline-block;
+}
+
+/* line 224, ../sass/init/_global.scss */
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 235, ../sass/init/_global.scss */
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+  background: #333;
+}
+
+/* line 240, ../sass/init/_global.scss */
+#fullPage-nav span,
+.fullPage-slidesNav span {
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 252, ../sass/init/_global.scss */
+.fullPage-tooltip {
+  position: absolute;
+  top: -2px;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+/* line 260, ../sass/init/_global.scss */
+.fullPage-tooltip.right {
+  right: 20px;
+}
+
+/* line 264, ../sass/init/_global.scss */
+.fullPage-tooltip.left {
+  left: 20px;
 }
 
 /* line 1, ../sass/views/_loader.scss */
