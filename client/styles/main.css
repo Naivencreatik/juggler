@@ -2336,7 +2336,7 @@ nav a:hover {
 #contact #contactForm {
   position: relative;
   width: 100%;
-  margin: 250px auto;
+  margin: 50px auto;
 }
 /* line 25, ../sass/views/_contact.scss */
 #contact input {
