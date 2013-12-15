@@ -7,13 +7,17 @@ nav {
 
 	width: 100%;
 	height: $nav-height;
-	background: $black;
+	background: $white;
 
 	.nav-logo {
-		height: $nav-height;
-		line-height: $nav-height;
 		float: left;
-		padding: 0 0 0 ($nav-height / 2);
+		height: $nav-height;
+		padding: 0 0 0 15px;
+		line-height: $nav-height;
+		
+		a {
+			color: $black !important;
+		}
 	}
 
 	ul {
@@ -35,6 +39,12 @@ nav {
 	}
 
 	a {
-		text-transform: uppercase;
+		color: transparentize($black, .5);
+		text-decoration: none;
+
+		&:hover {
+			color: $black;
+			text-decoration: none;
+		}
 	}
 }

@@ -1268,25 +1268,26 @@ html, body {
 body {
   font: 14px/1 Arial, sans-serif;
   color: white;
+  border: 15px solid white;
 }
 
-/* line 17, ../sass/init/_global.scss */
+/* line 18, ../sass/init/_global.scss */
 a {
   color: white;
   text-decoration: none;
 }
-/* line 21, ../sass/init/_global.scss */
+/* line 22, ../sass/init/_global.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 26, ../sass/init/_global.scss */
+/* line 27, ../sass/init/_global.scss */
 #main {
   position: relative;
   height: 100%;
 }
 
-/* line 31, ../sass/init/_global.scss */
+/* line 32, ../sass/init/_global.scss */
 .home {
   position: relative;
   width: 100%;
@@ -1297,7 +1298,7 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 38, ../sass/init/_global.scss */
+/* line 39, ../sass/init/_global.scss */
 .home .home-content {
   position: absolute;
   top: 50%;
@@ -1310,21 +1311,21 @@ a:hover {
   text-align: center;
 }
 
-/* line 49, ../sass/init/_global.scss */
+/* line 50, ../sass/init/_global.scss */
 .bio,
 .show,
 .gallery {
   width: 100%;
   height: 100%;
 }
-/* line 53, ../sass/init/_global.scss */
+/* line 54, ../sass/init/_global.scss */
 .bio img,
 .show img,
 .gallery img {
   position: relative;
 }
 
-/* line 58, ../sass/init/_global.scss */
+/* line 59, ../sass/init/_global.scss */
 .bio {
   position: relative;
   background-color: #2a9ae2;
@@ -1361,7 +1362,7 @@ a:hover {
   transform: skewX(50deg) translateX(30%);
 }
 
-/* line 62, ../sass/init/_global.scss */
+/* line 63, ../sass/init/_global.scss */
 .show {
   position: relative;
   background-color: #f7862a;
@@ -1398,7 +1399,7 @@ a:hover {
   transform: skewX(-50deg) translateX(40%);
 }
 
-/* line 66, ../sass/init/_global.scss */
+/* line 67, ../sass/init/_global.scss */
 .gallery {
   position: relative;
   background-color: #907eb2;
@@ -1435,7 +1436,7 @@ a:hover {
   transform: skewX(50deg) translateX(30%);
 }
 
-/* line 70, ../sass/init/_global.scss */
+/* line 71, ../sass/init/_global.scss */
 .center {
   position: relative;
   z-index: 4;
@@ -1443,25 +1444,25 @@ a:hover {
   margin: 0 auto;
 }
 
-/* line 78, ../sass/init/_global.scss */
+/* line 79, ../sass/init/_global.scss */
 .img-content,
 .text-content {
   float: left;
   width: 50%;
 }
 
-/* line 83, ../sass/init/_global.scss */
+/* line 84, ../sass/init/_global.scss */
 .text-content {
   padding: 115px 0;
 }
 
-/* line 87, ../sass/init/_global.scss */
+/* line 88, ../sass/init/_global.scss */
 .text {
   width: 50%;
   height: 350px;
 }
 
-/* line 92, ../sass/init/_global.scss */
+/* line 93, ../sass/init/_global.scss */
 #tubular-container {
   position: absolute !important;
 }
@@ -1797,16 +1798,20 @@ nav {
   z-index: 5;
   width: 100%;
   height: 50px;
-  background: black;
+  background: white;
 }
 /* line 12, ../sass/views/_menu.scss */
 nav .nav-logo {
-  height: 50px;
-  line-height: 50px;
   float: left;
-  padding: 0 0 0 25px;
+  height: 50px;
+  padding: 0 0 0 15px;
+  line-height: 50px;
 }
-/* line 19, ../sass/views/_menu.scss */
+/* line 18, ../sass/views/_menu.scss */
+nav .nav-logo a {
+  color: black !important;
+}
+/* line 23, ../sass/views/_menu.scss */
 nav ul {
   display: block;
   width: 500px;
@@ -1815,18 +1820,24 @@ nav ul {
   padding: 0;
   line-height: 50px;
 }
-/* line 28, ../sass/views/_menu.scss */
+/* line 32, ../sass/views/_menu.scss */
 nav li {
   display: inline-block;
   margin-right: 50px;
 }
-/* line 32, ../sass/views/_menu.scss */
+/* line 36, ../sass/views/_menu.scss */
 nav li:last-child {
   margin-right: 0;
 }
-/* line 37, ../sass/views/_menu.scss */
+/* line 41, ../sass/views/_menu.scss */
 nav a {
-  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+/* line 45, ../sass/views/_menu.scss */
+nav a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 /* line 1, ../sass/views/_bio.scss */
@@ -1946,7 +1957,7 @@ nav a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 6;
+  z-index: 4;
   width: 100%;
   height: 100%;
   background: rgba(42, 154, 226, 0.8);
