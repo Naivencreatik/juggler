@@ -8,10 +8,13 @@
 	}
 
 	h2 {
-		font-size: 26px;
+		width: 470px;
 		margin-bottom: 15px;
+		padding-bottom: 5px;
+		font-size: 48px;
 		color: $white;
-		text-transform: uppercase;
+		border-bottom: 5px solid $white; 
+		font-family: Impact, Arial;
 	}
 
 	p {
