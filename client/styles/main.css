@@ -1712,23 +1712,24 @@ nav a {
 .bio {
   padding: 75px 0 75px 0;
 }
-/* line 5, ../sass/views/_bio.scss */
+/* line 4, ../sass/views/_bio.scss */
 .bio img {
   display: inline-block;
   margin: 0 25px 0 0;
   vertical-align: middle;
 }
-/* line 11, ../sass/views/_bio.scss */
+/* line 10, ../sass/views/_bio.scss */
 .bio h2 {
   font-size: 26px;
   margin-bottom: 15px;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
-/* line 18, ../sass/views/_bio.scss */
+/* line 17, ../sass/views/_bio.scss */
 .bio p {
-  font-size: 20px;
-  color: black;
+  width: 470px;
+  font-size: 18px;
+  color: white;
 }
 
 /* line 1, ../sass/views/_spectacle.scss */
@@ -1745,13 +1746,14 @@ nav a {
 .spectacle h2 {
   font-size: 26px;
   margin-bottom: 15px;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
 /* line 17, ../sass/views/_spectacle.scss */
 .spectacle p {
-  font-size: 20px;
-  color: black;
+  width: 470px;
+  font-size: 18px;
+  color: white;
 }
 
 /* line 1, ../sass/views/_gallery.scss */

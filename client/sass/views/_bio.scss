@@ -1,5 +1,4 @@
 .bio {
-
 	padding: $padding-section;
 
 	img {
@@ -9,14 +8,18 @@
 	}
 
 	h2 {
-		font-size: 26px;
+		width: 470px;
 		margin-bottom: 15px;
-		color: $black;
-		text-transform: uppercase;
+		padding-bottom: 5px;
+		font-size: 48px;
+		color: $white;
+		border-bottom: 5px solid $white; 
+		font-family: Impact, Arial;
 	}
 
 	p {
-		font-size: 20px;
-		color: $black;
+		width: 470px;
+		font-size: 18px;
+		color: $white;
 	}
 }
