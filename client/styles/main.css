@@ -1447,22 +1447,27 @@ a:hover {
 }
 
 /* line 82, ../sass/init/_global.scss */
-.text {
-  height: 350px;
-  width: 50%;
+.text-content {
+  padding: 115px 0;
 }
 
-/* line 87, ../sass/init/_global.scss */
+/* line 86, ../sass/init/_global.scss */
+.text {
+  width: 50%;
+  height: 350px;
+}
+
+/* line 91, ../sass/init/_global.scss */
 #tubular-container {
   position: absolute !important;
 }
 
-/* line 91, ../sass/init/_global.scss */
+/* line 95, ../sass/init/_global.scss */
 #jpreOverlay {
   background: #2a9ae2;
 }
 
-/* line 95, ../sass/init/_global.scss */
+/* line 99, ../sass/init/_global.scss */
 #jpreSlide {
   width: 50%;
   height: 30%;
@@ -1472,13 +1477,13 @@ a:hover {
   text-align: center;
 }
 
-/* line 104, ../sass/init/_global.scss */
+/* line 108, ../sass/init/_global.scss */
 #jpreLoader {
   width: 100%;
   height: 1px;
 }
 
-/* line 109, ../sass/init/_global.scss */
+/* line 113, ../sass/init/_global.scss */
 #jpreBar {
   background-color: white;
   animation: progress 2s linear infinite;
@@ -1488,7 +1493,7 @@ a:hover {
   -o-animation: progress 2s linear infinite;
 }
 
-/* line 114, ../sass/init/_global.scss */
+/* line 118, ../sass/init/_global.scss */
 #jprePercentage {
   top: 24px;
   right: -45%;
@@ -1497,7 +1502,7 @@ a:hover {
   text-align: center;
 }
 
-/* line 122, ../sass/init/_global.scss */
+/* line 126, ../sass/init/_global.scss */
 #jpreButton {
   width: 100px;
   margin: 0 auto;
@@ -1513,54 +1518,54 @@ a:hover {
 }
 
 @-webkit-keyframes progress {
-  /* line 137, ../sass/init/_global.scss */
+  /* line 141, ../sass/init/_global.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 140, ../sass/init/_global.scss */
+  /* line 144, ../sass/init/_global.scss */
   100% {
     background-position: -60px -60px;
   }
 }
 
 @-moz-keyframes progress {
-  /* line 137, ../sass/init/_global.scss */
+  /* line 141, ../sass/init/_global.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 140, ../sass/init/_global.scss */
+  /* line 144, ../sass/init/_global.scss */
   100% {
     background-position: -60px -60px;
   }
 }
 
 @-ms-keyframes progress {
-  /* line 137, ../sass/init/_global.scss */
+  /* line 141, ../sass/init/_global.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 140, ../sass/init/_global.scss */
+  /* line 144, ../sass/init/_global.scss */
   100% {
     background-position: -60px -60px;
   }
 }
 
 @keyframes progress {
-  /* line 137, ../sass/init/_global.scss */
+  /* line 141, ../sass/init/_global.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 140, ../sass/init/_global.scss */
+  /* line 144, ../sass/init/_global.scss */
   100% {
     background-position: -60px -60px;
   }
 }
 
-/* line 145, ../sass/init/_global.scss */
+/* line 149, ../sass/init/_global.scss */
 .progress {
   animation-name: progress;
   -webkit-animation-name: progress;
