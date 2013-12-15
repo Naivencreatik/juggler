@@ -1,7 +1,8 @@
 @import "compass";
 @import "compass/css3";
-@import "compass/reset";
+// @import "compass/reset";
 
+@import "init/normalize";
 @import "init/mixins";
 @import "init/variables";
 @import "init/icons";
@@ -13,6 +14,7 @@
 
 @import "views/loader";
 @import "views/menu";
+@import "views/introduction";
 @import "views/bio";
 @import "views/show";
 @import "views/gallery";
