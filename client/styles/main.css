@@ -110,6 +110,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: "\e393";
 }
 
+/* line 54, ../sass/animations/_animations.scss */
+.progress {
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+}
+
 @-webkit-keyframes fadeIn {
   /* line 2, ../sass/animations/_fade-in.scss */
   0% {
@@ -1668,7 +1687,7 @@ a:hover {
   -o-animation-name: progress;
 }
 
-/* line 1, ../sass/views/_nav.scss */
+/* line 1, ../sass/views/_menu.scss */
 nav {
   position: fixed;
   left: 0;
@@ -1678,14 +1697,14 @@ nav {
   height: 50px;
   background: black;
 }
-/* line 12, ../sass/views/_nav.scss */
+/* line 12, ../sass/views/_menu.scss */
 nav .nav-logo {
   height: 50px;
   line-height: 50px;
   float: left;
   padding: 0 0 0 25px;
 }
-/* line 19, ../sass/views/_nav.scss */
+/* line 19, ../sass/views/_menu.scss */
 nav ul {
   display: block;
   width: 500px;
@@ -1694,16 +1713,16 @@ nav ul {
   padding: 0;
   line-height: 50px;
 }
-/* line 28, ../sass/views/_nav.scss */
+/* line 28, ../sass/views/_menu.scss */
 nav li {
   display: inline-block;
   margin-right: 50px;
 }
-/* line 32, ../sass/views/_nav.scss */
+/* line 32, ../sass/views/_menu.scss */
 nav li:last-child {
   margin-right: 0;
 }
-/* line 37, ../sass/views/_nav.scss */
+/* line 37, ../sass/views/_menu.scss */
 nav a {
   text-transform: uppercase;
 }
@@ -1720,37 +1739,43 @@ nav a {
 }
 /* line 10, ../sass/views/_bio.scss */
 .bio h2 {
-  font-size: 26px;
+  width: 470px;
   margin-bottom: 15px;
+  padding-bottom: 5px;
+  font-size: 48px;
   color: white;
-  text-transform: uppercase;
+  border-bottom: 5px solid white;
+  font-family: Impact, Arial;
 }
-/* line 17, ../sass/views/_bio.scss */
+/* line 20, ../sass/views/_bio.scss */
 .bio p {
   width: 470px;
   font-size: 18px;
   color: white;
 }
 
-/* line 1, ../sass/views/_spectacle.scss */
-.spectacle {
+/* line 1, ../sass/views/_show.scss */
+.show {
   padding: 75px 0 75px 0;
 }
-/* line 4, ../sass/views/_spectacle.scss */
-.spectacle img {
+/* line 4, ../sass/views/_show.scss */
+.show img {
   display: inline-block;
   margin: 0 0 0 25px;
   vertical-align: middle;
 }
-/* line 10, ../sass/views/_spectacle.scss */
-.spectacle h2 {
-  font-size: 26px;
+/* line 10, ../sass/views/_show.scss */
+.show h2 {
+  width: 470px;
   margin-bottom: 15px;
+  padding-bottom: 5px;
+  font-size: 48px;
   color: white;
-  text-transform: uppercase;
+  border-bottom: 5px solid white;
+  font-family: Impact, Arial;
 }
-/* line 17, ../sass/views/_spectacle.scss */
-.spectacle p {
+/* line 20, ../sass/views/_show.scss */
+.show p {
   width: 470px;
   font-size: 18px;
   color: white;

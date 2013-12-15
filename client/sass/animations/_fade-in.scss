@@ -8,6 +8,6 @@
 }
 
 %fadeIn {
-    @extend .animated;
+    @extend %animated;
     @include animation-name(fadeIn);
 }

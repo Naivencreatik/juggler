@@ -10,6 +10,6 @@
 }
 
 %fadeInRight {
-    @extend .animated;
+    @extend %animated;
     @include animation-name(fadeInRight);
 }

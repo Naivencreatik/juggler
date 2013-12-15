@@ -10,6 +10,6 @@
 }
 
 %fadeInLeft {
-    @extend .animated;
+    @extend %animated;
     @include animation-name(fadeInLeft);
 }
