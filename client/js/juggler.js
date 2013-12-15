@@ -1,6 +1,20 @@
 $(document).ready( function() {
     var timer;  //timer for splash screen
 
+    function intro() {
+        var wh = $(window).height();
+    
+        $('#introduction').css({
+            height: wh + 'px'
+        });
+    }
+
+    intro();
+
+    $(window).resize(function(){
+        intro();
+    });
+
     function scroll(){
         $("#boxscroll").niceScroll({
             cursorborder: "",
@@ -70,5 +84,28 @@ $(document).ready( function() {
     // for video youtube
     // var options = { videoId: '-yHAAel9hhw', repeat: true, mute: false };
     // $('#home').tubular(options);
+
+    $('nav a').bind('click',function(event){
+        event.preventDefault();
+        var $anchor = $(this);
+        //var key = $(".menu nav a").getAttribute('data-key').value;
+
+        $('html, body').stop().animate({
+            scrollTop:$($anchor.attr('href')).offset().top
+        },1500,'easeInOutExpo');
+
+        setTimeout(function(){
+            window.location.hash = $anchor.attr('href');
+        }, 500);
+    });
+
+    $('.openContact').on('click', function(event){
+        event.preventDefault();
+        $('#contact').toggle();
+
+        $('nav ul li a').on('click', function() {
+            $('#contact').toggle();
+        });
+    });
 });
 
