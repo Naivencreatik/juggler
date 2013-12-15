@@ -1,0 +1,174 @@
+#superContainer {
+    position:relative;
+    height:100%;
+}
+
+.section {
+    position: relative;
+    @include box-sizing(border-box);
+}
+
+.slide {
+    float: left;
+}
+
+.slide, 
+.slidesContainer {
+    display: block;
+    height: 100%;
+}
+
+.slides {
+    position: relative;
+	height: 100%;
+    overflow: hidden;
+    @include transition(all 0.3s ease-out);
+}
+
+.slidesContainer {
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.table {
+	display: table;
+	width: 100%;
+}
+
+.tableCell {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+
+.controlArrow {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+	width: 0px;
+	height: 0px;
+	margin-top: -38px;
+	border-style: solid;
+    cursor: pointer;
+	
+	.prev {
+		left: 50px;
+		width: 0px;
+		border-width: 38.5px 34px 38.5px 0;
+		border-color: transparent $white transparent transparent;
+	}
+	
+	.next {  
+		right: 50px;
+		border-width: 38.5px 0 38.5px 34px;
+		border-color: transparent transparent transparent $white;
+	}
+}
+
+
+.scrollable{
+	overflow:scroll;
+}
+
+.easing{
+    @include transition(all 0.7s ease-out);
+}
+
+#fullPage-nav{
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	margin-top: -32px;
+	opacity: 1;
+	
+	.right{
+		right: 17px;
+	}
+	
+	.left{
+		left: 17px;
+	}
+}
+
+
+.fullPage-slidesNav{
+	position: absolute;
+	z-index: 4;
+	left: 50%;
+	opacity: 1;
+	
+	.bottom{
+		bottom: 17px;
+	}
+	
+	.top{
+		top: 17px;
+	}
+}
+
+
+
+#fullPage-nav,
+.fullPage-slidesNav {
+	ul {
+		margin:0;
+		padding:0;
+		
+		li {
+			display: block;
+			width: 14px;
+			height: 13px;
+			margin: 7px;
+			position:relative;
+		
+			a {
+				display: block;
+				position: relative;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
+	}
+	
+	span {
+		position: absolute;
+		z-index: 1;
+		top: 2px;
+		left: 2px;
+		width: 8px;
+		height: 8px;
+		border: 1px solid #000;
+		background: rgba(0, 0, 0, 0);
+		@include border-radius(50%);
+	}
+
+	.active span {
+		background: #333;
+	}
+}
+
+
+.fullPage-slidesNav li {
+	display: inline-block;
+}
+
+.fullPage-tooltip{
+	position: absolute;
+	top: -2px;
+	font-size: 14px;
+	font-family: arial, helvetica, sans-serif;
+	color: $white;
+	
+	.right{
+		right: 20px;
+	}
+
+	.left{
+		left: 20px;
+	}
+}

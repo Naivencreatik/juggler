@@ -13,14 +13,14 @@
 			"verticalCentered" : true,
 			'resize' : true,
 			'anchors':[],
-			'scrollingSpeed': 700,
-			'easing': 'easeInQuart',
+			'scrollingSpeed': 1000,
+			'easing': 'easeInOutExpo',
 			'menu': false,
 			'navigation': false,
 			'navigationPosition': 'right',
 			'navigationColor': '#000',
 			'navigationTooltips': [],
-			'slidesNavigation': false,
+			'slidesNavigation': true,
 			'slidesNavPosition': 'bottom',
 			'controlArrowColor': '#fff',
 			'loopBottom': false,
@@ -41,7 +41,6 @@
 			'afterSlideLoad': null,
 			'onSlideLeave': null
 		}, options);		
-		
 		
 		
 		//Defines the delay to take place before being able to scroll to the next section
