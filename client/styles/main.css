@@ -1283,10 +1283,9 @@ a:hover {
 /* line 26, ../sass/init/_global.scss */
 #main {
   position: relative;
-  padding-bottom: 50px;
 }
 
-/* line 31, ../sass/init/_global.scss */
+/* line 30, ../sass/init/_global.scss */
 .home {
   position: relative;
   width: 100%;
@@ -1297,7 +1296,7 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 38, ../sass/init/_global.scss */
+/* line 37, ../sass/init/_global.scss */
 .home .home-content {
   position: absolute;
   top: 50%;
@@ -1310,21 +1309,21 @@ a:hover {
   text-align: center;
 }
 
-/* line 49, ../sass/init/_global.scss */
+/* line 48, ../sass/init/_global.scss */
 .bio,
 .show,
 .gallery {
   width: 100%;
   height: 800px;
 }
-/* line 53, ../sass/init/_global.scss */
+/* line 52, ../sass/init/_global.scss */
 .bio img,
 .show img,
 .gallery img {
   position: relative;
 }
 
-/* line 58, ../sass/init/_global.scss */
+/* line 57, ../sass/init/_global.scss */
 .bio {
   position: relative;
   background-color: #2a9ae2;
@@ -1361,7 +1360,7 @@ a:hover {
   transform: skewX(50deg) translateX(30%);
 }
 
-/* line 62, ../sass/init/_global.scss */
+/* line 61, ../sass/init/_global.scss */
 .show {
   position: relative;
   background-color: #f7862a;
@@ -1398,7 +1397,7 @@ a:hover {
   transform: skewX(-50deg) translateX(40%);
 }
 
-/* line 66, ../sass/init/_global.scss */
+/* line 65, ../sass/init/_global.scss */
 .gallery {
   position: relative;
   background-color: #907eb2;
@@ -1435,7 +1434,7 @@ a:hover {
   transform: skewX(50deg) translateX(30%);
 }
 
-/* line 70, ../sass/init/_global.scss */
+/* line 69, ../sass/init/_global.scss */
 .center {
   position: relative;
   z-index: 2;
@@ -1443,25 +1442,25 @@ a:hover {
   margin: 0 auto;
 }
 
-/* line 78, ../sass/init/_global.scss */
+/* line 77, ../sass/init/_global.scss */
 .img-content,
 .text-content {
   float: left;
   width: 50%;
 }
 
-/* line 83, ../sass/init/_global.scss */
+/* line 82, ../sass/init/_global.scss */
 .text-content {
   padding: 115px 0;
 }
 
-/* line 87, ../sass/init/_global.scss */
+/* line 86, ../sass/init/_global.scss */
 .text {
   width: 50%;
   height: 350px;
 }
 
-/* line 92, ../sass/init/_global.scss */
+/* line 91, ../sass/init/_global.scss */
 #tubular-container {
   position: absolute !important;
 }
