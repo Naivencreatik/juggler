@@ -56,17 +56,7 @@
     //create jpreLoader UI
     var createContainer = function() {
         
-        jOverlay = $('<div></div>')
-        .attr('id', 'jpreOverlay')
-        .css({
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: 9999999
-        })
-        .appendTo('body');
+        jOverlay = $('<div></div>').attr('id', 'jpreOverlay').appendTo('body');
         
         if(jpreOptions.showSplash) {
             jContent = $('<div></div>')
@@ -106,10 +96,6 @@
         if(jpreOptions.showPercentage) {
             jPer = $('<div></div>')
             .attr('id', 'jprePercentage')
-            .css({
-                position: 'relative',
-                height: '100%'
-            })
             .appendTo(jLoader)
             .html('Loading...');
         }

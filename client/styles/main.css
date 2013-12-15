@@ -1547,10 +1547,16 @@ a:hover {
 
 /* line 1, ../sass/views/_loader.scss */
 #jpreOverlay {
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: #2a9ae2;
 }
 
-/* line 5, ../sass/views/_loader.scss */
+/* line 11, ../sass/views/_loader.scss */
 #jpreSlide {
   width: 50%;
   height: 30%;
@@ -1560,15 +1566,15 @@ a:hover {
   text-align: center;
 }
 
-/* line 14, ../sass/views/_loader.scss */
+/* line 20, ../sass/views/_loader.scss */
 #jpreLoader {
   width: 100%;
-  height: 1px;
+  height: 100%;
 }
 
-/* line 19, ../sass/views/_loader.scss */
+/* line 25, ../sass/views/_loader.scss */
 #jpreBar {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.2);
   animation: progress 2s linear infinite;
   -webkit-animation: progress 2s linear infinite;
   -moz-animation: progress 2s linear infinite;
@@ -1576,16 +1582,21 @@ a:hover {
   -o-animation: progress 2s linear infinite;
 }
 
-/* line 24, ../sass/views/_loader.scss */
+/* line 30, ../sass/views/_loader.scss */
 #jprePercentage {
-  top: 24px;
-  right: -45%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 25px;
+  margin-top: -50px;
+  margin-left: -12.5px;
   font-size: 24px;
   color: white;
   text-align: center;
 }
 
-/* line 32, ../sass/views/_loader.scss */
+/* line 43, ../sass/views/_loader.scss */
 #jpreButton {
   width: 100px;
   margin: 0 auto;
@@ -1601,54 +1612,54 @@ a:hover {
 }
 
 @-webkit-keyframes progress {
-  /* line 47, ../sass/views/_loader.scss */
+  /* line 58, ../sass/views/_loader.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 50, ../sass/views/_loader.scss */
+  /* line 61, ../sass/views/_loader.scss */
   100% {
     background-position: -60px -60px;
   }
 }
 
 @-moz-keyframes progress {
-  /* line 47, ../sass/views/_loader.scss */
+  /* line 58, ../sass/views/_loader.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 50, ../sass/views/_loader.scss */
+  /* line 61, ../sass/views/_loader.scss */
   100% {
     background-position: -60px -60px;
   }
 }
 
 @-ms-keyframes progress {
-  /* line 47, ../sass/views/_loader.scss */
+  /* line 58, ../sass/views/_loader.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 50, ../sass/views/_loader.scss */
+  /* line 61, ../sass/views/_loader.scss */
   100% {
     background-position: -60px -60px;
   }
 }
 
 @keyframes progress {
-  /* line 47, ../sass/views/_loader.scss */
+  /* line 58, ../sass/views/_loader.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 50, ../sass/views/_loader.scss */
+  /* line 61, ../sass/views/_loader.scss */
   100% {
     background-position: -60px -60px;
   }
 }
 
-/* line 55, ../sass/views/_loader.scss */
+/* line 66, ../sass/views/_loader.scss */
 .progress {
   animation-name: progress;
   -webkit-animation-name: progress;

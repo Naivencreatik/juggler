@@ -37,7 +37,7 @@ $(document).ready( function() {
     //calling jPreLoader
     $('body').jpreLoader({
         splashID: "#jSplash",
-        loaderVPos: '70%',
+        loaderVPos: '0',
         autoClose: true,
 
         splashFunction: function() {
