@@ -1,19 +1,5 @@
 $(document).ready( function() {
     var timer;  //timer for splash screen
-
-    function intro() {
-        var wh = $(window).height();
-    
-        $('#introduction').css({
-            height: wh + 'px'
-        });
-    }
-
-    intro();
-
-    $(window).resize(function(){
-        intro();
-    });
     
     $('#main').hide();
     
@@ -56,6 +42,15 @@ $(document).ready( function() {
     $.fn.fullpage({
         anchors: ['introduction', 'bio', 'show', 'gallery']
     });
+    
+    $('.openContact').on('click', function(event){
+        event.preventDefault();
+        $('#contact').toggle();
+
+        $('nav ul li a').on('click', function() {
+            $('#contact').toggle();
+        });
+    });
 
     // Parallax effect
     // $('[data-type="slide"]').each(function(){
@@ -73,5 +68,6 @@ $(document).ready( function() {
     // for video youtube
     // var options = { videoId: '-yHAAel9hhw', repeat: true, mute: false };
     // $('#home').tubular(options);
+
 });
 
