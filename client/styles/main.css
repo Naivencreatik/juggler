@@ -1522,9 +1522,10 @@ a:hover {
 .slidesContainer {
   float: left;
   position: relative;
+  z-index: 1;
 }
 
-/* line 141, ../sass/init/_global.scss */
+/* line 142, ../sass/init/_global.scss */
 .controlArrow {
   position: absolute;
   z-index: 5;
@@ -1536,7 +1537,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 152, ../sass/init/_global.scss */
+/* line 153, ../sass/init/_global.scss */
 .controlArrow.prev {
   left: 15px;
   width: 0px;
@@ -1544,19 +1545,19 @@ a:hover {
   border-color: transparent #fff transparent transparent;
 }
 
-/* line 159, ../sass/init/_global.scss */
+/* line 160, ../sass/init/_global.scss */
 .controlArrow.next {
   right: 15px;
   border-width: 38.5px 0 38.5px 34px;
   border-color: transparent transparent transparent #fff;
 }
 
-/* line 165, ../sass/init/_global.scss */
+/* line 166, ../sass/init/_global.scss */
 .scrollable {
   overflow: scroll;
 }
 
-/* line 169, ../sass/init/_global.scss */
+/* line 170, ../sass/init/_global.scss */
 .easing {
   -webkit-transition: all 0.7s ease-out;
   -moz-transition: all 0.7s ease-out;
@@ -1564,7 +1565,7 @@ a:hover {
   transition: all 0.7s ease-out;
 }
 
-/* line 173, ../sass/init/_global.scss */
+/* line 174, ../sass/init/_global.scss */
 #fullPage-nav {
   position: fixed;
   z-index: 100;
@@ -1573,17 +1574,17 @@ a:hover {
   opacity: 1;
 }
 
-/* line 181, ../sass/init/_global.scss */
+/* line 182, ../sass/init/_global.scss */
 #fullPage-nav.right {
   right: 17px;
 }
 
-/* line 185, ../sass/init/_global.scss */
+/* line 186, ../sass/init/_global.scss */
 #fullPage-nav.left {
   left: 17px;
 }
 
-/* line 189, ../sass/init/_global.scss */
+/* line 190, ../sass/init/_global.scss */
 .fullPage-slidesNav {
   position: absolute;
   z-index: 4;
@@ -1591,24 +1592,24 @@ a:hover {
   opacity: 1;
 }
 
-/* line 196, ../sass/init/_global.scss */
+/* line 197, ../sass/init/_global.scss */
 .fullPage-slidesNav.bottom {
   bottom: 17px;
 }
 
-/* line 200, ../sass/init/_global.scss */
+/* line 201, ../sass/init/_global.scss */
 .fullPage-slidesNav.top {
   top: 17px;
 }
 
-/* line 205, ../sass/init/_global.scss */
+/* line 206, ../sass/init/_global.scss */
 #fullPage-nav ul,
 .fullPage-slidesNav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 211, ../sass/init/_global.scss */
+/* line 212, ../sass/init/_global.scss */
 #fullPage-nav li,
 .fullPage-slidesNav li {
   display: block;
@@ -1618,12 +1619,12 @@ a:hover {
   position: relative;
 }
 
-/* line 219, ../sass/init/_global.scss */
+/* line 220, ../sass/init/_global.scss */
 .fullPage-slidesNav li {
   display: inline-block;
 }
 
-/* line 224, ../sass/init/_global.scss */
+/* line 225, ../sass/init/_global.scss */
 #fullPage-nav li a,
 .fullPage-slidesNav li a {
   display: block;
@@ -1635,13 +1636,13 @@ a:hover {
   text-decoration: none;
 }
 
-/* line 235, ../sass/init/_global.scss */
+/* line 236, ../sass/init/_global.scss */
 #fullPage-nav li .active span,
 .fullPage-slidesNav .active span {
   background: #333;
 }
 
-/* line 240, ../sass/init/_global.scss */
+/* line 241, ../sass/init/_global.scss */
 #fullPage-nav span,
 .fullPage-slidesNav span {
   position: absolute;
@@ -1659,7 +1660,7 @@ a:hover {
   border-radius: 50%;
 }
 
-/* line 252, ../sass/init/_global.scss */
+/* line 253, ../sass/init/_global.scss */
 .fullPage-tooltip {
   position: absolute;
   top: -2px;
@@ -1668,12 +1669,12 @@ a:hover {
   color: #fff;
 }
 
-/* line 260, ../sass/init/_global.scss */
+/* line 261, ../sass/init/_global.scss */
 .fullPage-tooltip.right {
   right: 20px;
 }
 
-/* line 264, ../sass/init/_global.scss */
+/* line 265, ../sass/init/_global.scss */
 .fullPage-tooltip.left {
   left: 20px;
 }
@@ -1937,14 +1938,19 @@ nav a {
 .gallery .big {
   width: 500px;
   height: 100%;
+  display: none;
 }
-/* line 12, ../sass/views/_gallery.scss */
+/* line 13, ../sass/views/_gallery.scss */
 .gallery .little img {
   display: inline-block;
   width: 200px;
   height: 200px;
   background-color: black;
   border: 2px solid white;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 0 0px #464646;
+  -moz-box-shadow: 2px 2px 0 0px #464646;
+  box-shadow: 2px 2px 0 0px #464646;
 }
 
 /* line 1, ../sass/views/_contact.scss */

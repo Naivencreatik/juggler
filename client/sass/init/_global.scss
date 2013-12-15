@@ -136,6 +136,7 @@ a {
 .slidesContainer {
     float: left;
     position: relative;
+    z-index: 1;
 }
 
 .controlArrow {
