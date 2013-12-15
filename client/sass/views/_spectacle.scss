@@ -8,18 +8,21 @@
 	}
 
 	h2 {
-		width: 470px;
 		margin-bottom: 15px;
 		padding-bottom: 5px;
 		font-size: 48px;
-		color: $white;
 		border-bottom: 5px solid $white; 
 		font-family: Impact, Arial;
 	}
 
+	h2,
 	p {
 		width: 470px;
-		font-size: 18px;
 		color: $white;
+		@include text-shadow(1px 1px 1px #464646);
+	}
+
+	p {
+		font-size: 18px;
 	}
 }
