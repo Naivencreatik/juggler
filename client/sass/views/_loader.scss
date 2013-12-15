@@ -1,4 +1,10 @@
 #jpreOverlay {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: $color1;
 }
 
@@ -13,17 +19,22 @@
 
 #jpreLoader{
     width: 100%;
-    height: 1px;
+    height: 100%;
 }
 
 #jpreBar {
-    background-color: $white;
+    background-color: transparentize($white, .8);
     @include animation(progress 2s linear infinite);  
 }
 
 #jprePercentage {
-    top: 24px;
-    right: -45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 25px;
+    margin-top: -50px;
+    margin-left: -12.5px;
     font-size: 24px;
     color: $white;
     text-align: center;
