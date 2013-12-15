@@ -2,12 +2,15 @@
 @import "compass/css3";
 @import "compass/reset";
 
-@import "mixins";
-@import "variables";
-
+@import "init/mixins";
+@import "init/variables";
 @import "init/icons";
 
-@import "global";
+@import "animations/animations";
+
+@import "init/global";
+
+@import "views/loader";
 @import "views/nav";
 @import "views/bio";
 @import "views/spectacle";
