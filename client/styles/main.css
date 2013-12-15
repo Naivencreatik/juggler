@@ -1466,6 +1466,206 @@ a:hover {
   position: absolute !important;
 }
 
+/* line 1, ../sass/init/_slide.scss */
+#superContainer {
+  position: relative;
+  height: 100%;
+}
+
+/* line 6, ../sass/init/_slide.scss */
+.section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/init/_slide.scss */
+.slide {
+  float: left;
+}
+
+/* line 16, ../sass/init/_slide.scss */
+.slide,
+.slidesContainer {
+  display: block;
+  height: 100%;
+}
+
+/* line 21, ../sass/init/_slide.scss */
+.slides {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 28, ../sass/init/_slide.scss */
+.slidesContainer {
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 34, ../sass/init/_slide.scss */
+.table {
+  display: table;
+  width: 100%;
+}
+
+/* line 39, ../sass/init/_slide.scss */
+.tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 46, ../sass/init/_slide.scss */
+.controlArrow {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  width: 0px;
+  height: 0px;
+  margin-top: -38px;
+  border-style: solid;
+  cursor: pointer;
+}
+/* line 56, ../sass/init/_slide.scss */
+.controlArrow.prev {
+  left: 50px;
+  width: 0px;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent white transparent transparent;
+}
+/* line 63, ../sass/init/_slide.scss */
+.controlArrow.next {
+  right: 50px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent white;
+}
+
+/* line 71, ../sass/init/_slide.scss */
+.scrollable {
+  overflow: scroll;
+}
+
+/* line 75, ../sass/init/_slide.scss */
+.easing {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+/* line 79, ../sass/init/_slide.scss */
+#fullPage-nav {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  margin-top: -32px;
+  opacity: 1;
+}
+/* line 86, ../sass/init/_slide.scss */
+#fullPage-nav .right {
+  right: 17px;
+}
+/* line 90, ../sass/init/_slide.scss */
+#fullPage-nav .left {
+  left: 17px;
+}
+
+/* line 96, ../sass/init/_slide.scss */
+.fullPage-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+}
+/* line 102, ../sass/init/_slide.scss */
+.fullPage-slidesNav .bottom {
+  bottom: 17px;
+}
+/* line 106, ../sass/init/_slide.scss */
+.fullPage-slidesNav .top {
+  top: 17px;
+}
+
+/* line 115, ../sass/init/_slide.scss */
+#fullPage-nav ul,
+.fullPage-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 119, ../sass/init/_slide.scss */
+#fullPage-nav ul li,
+.fullPage-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+/* line 126, ../sass/init/_slide.scss */
+#fullPage-nav ul li a,
+.fullPage-slidesNav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 138, ../sass/init/_slide.scss */
+#fullPage-nav span,
+.fullPage-slidesNav span {
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 150, ../sass/init/_slide.scss */
+#fullPage-nav .active span,
+.fullPage-slidesNav .active span {
+  background: #333;
+}
+
+/* line 156, ../sass/init/_slide.scss */
+.fullPage-slidesNav li {
+  display: inline-block;
+}
+
+/* line 160, ../sass/init/_slide.scss */
+.fullPage-tooltip {
+  position: absolute;
+  top: -2px;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  color: white;
+}
+/* line 167, ../sass/init/_slide.scss */
+.fullPage-tooltip .right {
+  right: 20px;
+}
+/* line 171, ../sass/init/_slide.scss */
+.fullPage-tooltip .left {
+  left: 20px;
+}
+
 /* line 1, ../sass/views/_loader.scss */
 #jpreOverlay {
   position: fixed;

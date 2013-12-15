@@ -20,7 +20,7 @@
 			'navigationPosition': 'right',
 			'navigationColor': '#000',
 			'navigationTooltips': [],
-			'slidesNavigation': true,
+			'slidesNavigation': false,
 			'slidesNavPosition': 'bottom',
 			'controlArrowColor': '#fff',
 			'loopBottom': false,

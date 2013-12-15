@@ -53,14 +53,14 @@
 	border-style: solid;
     cursor: pointer;
 	
-	.prev {
+	&.prev {
 		left: 50px;
 		width: 0px;
 		border-width: 38.5px 34px 38.5px 0;
 		border-color: transparent $white transparent transparent;
 	}
 	
-	.next {  
+	&.next {  
 		right: 50px;
 		border-width: 38.5px 0 38.5px 34px;
 		border-color: transparent transparent transparent $white;
