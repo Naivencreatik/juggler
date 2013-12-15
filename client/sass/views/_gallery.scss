@@ -1,6 +1,17 @@
 .gallery {
 	width: 100%;
 
+	.tableCell {
+		text-align: center;
+	}
+
+	.slide-content {
+		display: inline-block;
+		width: auto;
+		max-width: 1295px;
+		text-align: left;
+	}
+
 	//MUST PUT A GRID
 	.big {
 		width: 500px;
@@ -11,13 +22,17 @@
 	.little {
 		// To style
 		img {
-			display: inline-block;
 			width: 200px;
 			height: 200px;
+			margin: 0 15px 15px 0;
 			background-color: $black;
 			border: 2px solid $white;
 			cursor: pointer;
 			@include box-shadow(2px 2px 0 0px #464646);
+
+			&:nth-child(6n+6) {
+				margin-right: 0;
+			}
 		}
 	}
 
