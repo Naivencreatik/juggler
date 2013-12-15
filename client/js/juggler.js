@@ -56,6 +56,10 @@ $(document).ready( function() {
         return false;
     });
 
+    $('.openBlog').on('click', function(event){
+        event.preventDefault();
+        $('body').addClass('push');
+    });
 
     // Parallax effect
     // $('[data-type="slide"]').each(function(){
