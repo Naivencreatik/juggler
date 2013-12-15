@@ -20,7 +20,7 @@
 		left: 0;
 		width: 150%;
 		height: 100%;
-		background-color: transparentize($black, .95);
+		background-color: darken($color, 10%);
 		@include transform(skewX($orientation + 20) translateX($position - 25));
 	}
 
@@ -31,7 +31,7 @@
 		left: 0;
 		width: 150%;
 		height: 100%;
-		background-color: transparentize($black, .9);
+		background-color: darken($color, 15%);
 		@include transform(skewX($orientation) translateX($position));
 	}
 

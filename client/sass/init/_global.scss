@@ -10,7 +10,6 @@ html, body {
 }
 
 body {
-	padding-bottom: 50px;
 	font: 14px/1 Arial, sans-serif;
 	color: $white;
 }
@@ -26,7 +25,6 @@ a {
 
 #main {
 	position: relative;
-	padding-bottom: 50px;
 }
 
 .home {
@@ -92,63 +90,4 @@ a {
 
 #tubular-container {
 	position: absolute !important;
-}
-
-#jpreOverlay {
-    background: $color1;
-}
-
-#jpreSlide{
-    width: 50%;
-    height: 30%;
-    font-size: 22px;
-    font-weight: bold;
-    color: #ccc;
-    text-align: center;
-}
-
-#jpreLoader{
-    width: 100%;
-    height: 1px;
-}
-
-#jpreBar {
-    background-color: $white;
-    @include animation(progress 2s linear infinite);  
-}
-
-#jprePercentage {
-    top: 24px;
-    right: -45%;
-    font-size: 24px;
-    color: $white;
-    text-align: center;
-}
-
-#jpreButton{
-    width: 100px;
-    margin: 0 auto;
-    padding: 3px 10px;
-    color: $white;
-    line-height: 1.5;
-    text-align: center;
-    font-weight: bold;
-    text-shadow:-1px -1px 0 #01293F;
-    border:1px solid #2EACEA;
-    background: #23a6ed;
-    cursor: pointer;
-}
-
-@include keyframes (progress){
-  0%{
-    background-position: 0 0;
-  }
-  100%{
-    background-position: -60px -60px;
-  }
-}
-
-.progress {
-  @extend %animated;
-  @include animation-name(progress);
 }

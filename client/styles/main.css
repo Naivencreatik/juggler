@@ -1266,32 +1266,35 @@ html, body {
 
 /* line 12, ../sass/init/_global.scss */
 body {
-  padding-bottom: 50px;
   font: 14px/1 Arial, sans-serif;
   color: white;
 }
 
-/* line 18, ../sass/init/_global.scss */
+/* line 17, ../sass/init/_global.scss */
 a {
   color: white;
   text-decoration: none;
 }
-/* line 22, ../sass/init/_global.scss */
+/* line 21, ../sass/init/_global.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 27, ../sass/init/_global.scss */
+/* line 26, ../sass/init/_global.scss */
 #main {
   position: relative;
-  padding-bottom: 50px;
 }
 
-/* line 32, ../sass/init/_global.scss */
+/* line 30, ../sass/init/_global.scss */
 .home {
   position: relative;
   width: 100%;
   height: 100%;
+  background: url("../../img/landing-bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /* line 37, ../sass/init/_global.scss */
 .home .home-content {
@@ -1334,7 +1337,7 @@ a:hover {
   left: 0;
   width: 150%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #1a7ebf;
   -webkit-transform: skewX(70deg) translateX(5%);
   -moz-transform: skewX(70deg) translateX(5%);
   -ms-transform: skewX(70deg) translateX(5%);
@@ -1349,7 +1352,7 @@ a:hover {
   left: 0;
   width: 150%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #1770a9;
   -webkit-transform: skewX(50deg) translateX(30%);
   -moz-transform: skewX(50deg) translateX(30%);
   -ms-transform: skewX(50deg) translateX(30%);
@@ -1371,7 +1374,7 @@ a:hover {
   left: 0;
   width: 150%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #e56c09;
   -webkit-transform: skewX(-30deg) translateX(15%);
   -moz-transform: skewX(-30deg) translateX(15%);
   -ms-transform: skewX(-30deg) translateX(15%);
@@ -1386,7 +1389,7 @@ a:hover {
   left: 0;
   width: 150%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #cd6008;
   -webkit-transform: skewX(-50deg) translateX(40%);
   -moz-transform: skewX(-50deg) translateX(40%);
   -ms-transform: skewX(-50deg) translateX(40%);
@@ -1408,7 +1411,7 @@ a:hover {
   left: 0;
   width: 150%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #755f9e;
   -webkit-transform: skewX(70deg) translateX(5%);
   -moz-transform: skewX(70deg) translateX(5%);
   -ms-transform: skewX(70deg) translateX(5%);
@@ -1423,7 +1426,7 @@ a:hover {
   left: 0;
   width: 150%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #69558e;
   -webkit-transform: skewX(50deg) translateX(30%);
   -moz-transform: skewX(50deg) translateX(30%);
   -ms-transform: skewX(50deg) translateX(30%);
@@ -1460,118 +1463,6 @@ a:hover {
 /* line 91, ../sass/init/_global.scss */
 #tubular-container {
   position: absolute !important;
-}
-
-/* line 95, ../sass/init/_global.scss */
-#jpreOverlay {
-  background: #2a9ae2;
-}
-
-/* line 99, ../sass/init/_global.scss */
-#jpreSlide {
-  width: 50%;
-  height: 30%;
-  font-size: 22px;
-  font-weight: bold;
-  color: #ccc;
-  text-align: center;
-}
-
-/* line 108, ../sass/init/_global.scss */
-#jpreLoader {
-  width: 100%;
-  height: 1px;
-}
-
-/* line 113, ../sass/init/_global.scss */
-#jpreBar {
-  background-color: white;
-  animation: progress 2s linear infinite;
-  -webkit-animation: progress 2s linear infinite;
-  -moz-animation: progress 2s linear infinite;
-  -ms-animation: progress 2s linear infinite;
-  -o-animation: progress 2s linear infinite;
-}
-
-/* line 118, ../sass/init/_global.scss */
-#jprePercentage {
-  top: 24px;
-  right: -45%;
-  font-size: 24px;
-  color: white;
-  text-align: center;
-}
-
-/* line 126, ../sass/init/_global.scss */
-#jpreButton {
-  width: 100px;
-  margin: 0 auto;
-  padding: 3px 10px;
-  color: white;
-  line-height: 1.5;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: -1px -1px 0 #01293F;
-  border: 1px solid #2EACEA;
-  background: #23a6ed;
-  cursor: pointer;
-}
-
-@-webkit-keyframes progress {
-  /* line 141, ../sass/init/_global.scss */
-  0% {
-    background-position: 0 0;
-  }
-
-  /* line 144, ../sass/init/_global.scss */
-  100% {
-    background-position: -60px -60px;
-  }
-}
-
-@-moz-keyframes progress {
-  /* line 141, ../sass/init/_global.scss */
-  0% {
-    background-position: 0 0;
-  }
-
-  /* line 144, ../sass/init/_global.scss */
-  100% {
-    background-position: -60px -60px;
-  }
-}
-
-@-ms-keyframes progress {
-  /* line 141, ../sass/init/_global.scss */
-  0% {
-    background-position: 0 0;
-  }
-
-  /* line 144, ../sass/init/_global.scss */
-  100% {
-    background-position: -60px -60px;
-  }
-}
-
-@keyframes progress {
-  /* line 141, ../sass/init/_global.scss */
-  0% {
-    background-position: 0 0;
-  }
-
-  /* line 144, ../sass/init/_global.scss */
-  100% {
-    background-position: -60px -60px;
-  }
-}
-
-/* line 149, ../sass/init/_global.scss */
-.progress {
-  animation-name: progress;
-  -webkit-animation-name: progress;
-  -moz-animation-name: progress;
-  -ms-animation-name: progress;
-  -o-animation-name: progress;
 }
 
 /* line 1, ../sass/views/_loader.scss */
@@ -1701,7 +1592,7 @@ a:hover {
 nav {
   position: fixed;
   left: 0;
-  bottom: 0;
+  top: 0;
   z-index: 3;
   width: 100%;
   height: 50px;
@@ -1744,7 +1635,7 @@ nav a {
 /* line 4, ../sass/views/_bio.scss */
 .bio img {
   display: inline-block;
-  margin: -34px 25px 0 -250px;
+  margin: -127px 25px 0 -250px;
   vertical-align: middle;
 }
 /* line 10, ../sass/views/_bio.scss */
@@ -1788,7 +1679,7 @@ nav a {
 /* line 4, ../sass/views/_show.scss */
 .show img {
   display: inline-block;
-  margin: 0 0 0 25px;
+  margin: -42px 0 0 -150px;
   vertical-align: middle;
 }
 /* line 10, ../sass/views/_show.scss */
@@ -1817,9 +1708,10 @@ nav a {
 .show p {
   width: 470px;
   color: white;
+  text-align: justify;
   text-shadow: 1px 1px 1px #464646;
 }
-/* line 36, ../sass/views/_show.scss */
+/* line 37, ../sass/views/_show.scss */
 .show p {
   font-size: 18px;
 }
