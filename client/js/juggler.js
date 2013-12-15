@@ -43,14 +43,19 @@ $(document).ready( function() {
         anchors: ['introduction', 'bio', 'show', 'gallery']
     });
     
-    $('.openContact').on('click', function(event){
+    $('nav .openContact').on('click', function(event){
         event.preventDefault();
-        $('#contact').toggle();
-
-        $('nav ul li a').on('click', function() {
-            $('#contact').toggle();
+        $('#contact').show();
+        $('#contactForm').on('click', function(event) {
+            event.stopPropagation();
         });
+
+        $('body').on('click', function() {
+            $('#contact').hide();
+        });
+        return false;
     });
+
 
     // Parallax effect
     // $('[data-type="slide"]').each(function(){
@@ -66,8 +71,8 @@ $(document).ready( function() {
     // });
 
     // for video youtube
-    // var options = { videoId: '-yHAAel9hhw', repeat: true, mute: false };
-    // $('#home').tubular(options);
+    // var options = { videoId: '-yHAAel9hhw', repeat: true, mute: true };
+    // $('.home').tubular(options);
 
 });
 

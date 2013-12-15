@@ -7,14 +7,19 @@
 	width: 100%;
 	height: 100%;
 	background: transparentize($color1, .2);
+    border: 15px solid $white;
+}
+
+.contact-content {
+    width: 690px;
+    margin: 5% auto; 
 }
 
 #contact {
-
 	#contactForm {
 		position: relative;
-		width: 690px;
-		margin: 250px auto; 
+		width: 100%;
+		margin: 50px auto; 
 	}
 
 	input {

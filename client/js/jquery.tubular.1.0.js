@@ -21,7 +21,7 @@
         mute: true,
         repeat: true,
         width: $(window).width(),
-        wrapperZIndex: 99,
+        wrapperZIndex: 1,
         playButtonClass: 'tubular-play',
         pauseButtonClass: 'tubular-pause',
         muteButtonClass: 'tubular-mute',
@@ -43,7 +43,7 @@
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
         $('html,body').css({'width': '100%', 'height': '100%'});
-        $body.prepend(tubularContainer);
+        $('.home .tableCell').prepend(tubularContainer);
         $node.css({position: 'relative', 'z-index': options.wrapperZIndex});
 
         // set up iframe player, use global scope so YT api can talk

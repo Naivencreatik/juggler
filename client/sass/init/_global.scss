@@ -38,10 +38,12 @@ a {
 
 	.home-content {
 		position: absolute;
+		z-index: 1;
 		top: 50%;
 		left: 50%;
 		@include translate(-50%, -50%);
 		text-align: center;
+		opacity: .5;
 	}
 }
 
@@ -88,8 +90,4 @@ a {
 .text {
 	width: 50%;
 	height: 350px;
-}
-
-#tubular-container {
-	position: absolute !important;
 }
