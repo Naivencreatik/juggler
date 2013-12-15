@@ -8,6 +8,6 @@
 }
 
 %fadeOut {
-    @extend .animated;
+    @extend %animated;
     @include animation-name(fadeOut);
 }

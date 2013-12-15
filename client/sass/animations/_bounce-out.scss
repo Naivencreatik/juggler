@@ -16,6 +16,6 @@
 }
 
 %bounceOut {
-    @extend .animated;
+    @extend %animated;
     @include animation-name(bounceOut);
 }

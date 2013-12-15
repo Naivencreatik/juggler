@@ -16,6 +16,6 @@
 }
 
 %bounceIn {
-    @extend .animated;
+    @extend %animated;
     @include animation-name(bounceIn);    
 }

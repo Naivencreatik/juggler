@@ -139,6 +139,6 @@ a {
 }
 
 .progress {
-  @extend .animated;
+  @extend %animated;
   @include animation-name(progress);
 }
