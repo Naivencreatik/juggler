@@ -73,11 +73,15 @@ a {
 	margin: 0 auto;
 }
 
-.texte{
-	display: inline-block;
+.img-content,
+.text-content {
+	float: left;
+	width: 50%;
+}
+
+.text-content {
 	height: 350px;
 	width: 50%;
-	vertical-align: middle;
 }
 
 #tubular-container {
