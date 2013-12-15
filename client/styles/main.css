@@ -2294,23 +2294,38 @@ nav a:hover {
 .gallery {
   width: 100%;
 }
-/* line 5, ../sass/views/_gallery.scss */
+/* line 4, ../sass/views/_gallery.scss */
+.gallery .tableCell {
+  text-align: center;
+}
+/* line 8, ../sass/views/_gallery.scss */
+.gallery .slide-content {
+  display: inline-block;
+  width: auto;
+  max-width: 1295px;
+  text-align: left;
+}
+/* line 16, ../sass/views/_gallery.scss */
 .gallery .big {
   width: 500px;
   height: 100%;
   display: none;
 }
-/* line 13, ../sass/views/_gallery.scss */
+/* line 24, ../sass/views/_gallery.scss */
 .gallery .little img {
-  display: inline-block;
   width: 200px;
   height: 200px;
+  margin: 0 15px 15px 0;
   background-color: black;
   border: 2px solid white;
   cursor: pointer;
   -webkit-box-shadow: 2px 2px 0 0px #464646;
   -moz-box-shadow: 2px 2px 0 0px #464646;
   box-shadow: 2px 2px 0 0px #464646;
+}
+/* line 33, ../sass/views/_gallery.scss */
+.gallery .little img:nth-child(6n+6) {
+  margin-right: 0;
 }
 
 /* line 1, ../sass/views/_contact.scss */
