@@ -3,138 +3,19 @@
 </head>
 
 <body>
-	<nav>
-		<div class="nav-logo">
-			<a href="#">
-				Brice Pezon
-			</a>
-		</div>
 
-		<ul>
-			<li>
-				<a href="#bio">
-					bio
-				</a>
-			</li>
-
-			<li>
-				<a href="#spectacle">
-					spectacle
-				</a>
-			</li>
-
-			<li>
-				<a href="#gallery">
-					galerie
-				</a>
-			</li>
-
-			<li>
-				<a href="#blog">
-					blog
-				</a>
-			</li>
-
-			<li>
-				<a href="#contact">
-					contact
-				</a>
-			</li>
-		</ul>
-	</nav>
+	{{> menu}}
 
 	<div id="main">
-		<section id="home" class="home">
 		
-			<!-- <div id="video-controls">
-				<button class="tubular-play icon-play"></button>
-				<button class="tubular-pause icon-pause"></button>
-				<button class="tubular-volume-up icon-volume-up"></button>
-				<button class="tubular-volume-down icon-volume-down"></button>
-				<button class="tubular-mute icon-volume-mute"></button>
-			</div> -->
+		{{> introduction}}
 		
-			<div class="home-content">
-				<img src="img/logo.png" width="438" height="489">
-			</div>
+		{{> bio}}
 		
-		</section>
-		
-		
-		<section id="bio" class="bio">
-		
-			<div class="bio-content center">
-		
-				<img src="img/velo.png" width="314" height="510" >
-		
-				<div class="texte">
-				
-					<h2>
-						Biographie	
-					</h2>
-		
-					<p>
-						Formé à l’Ecole Nationale du Cirque Annie Fratellini puis au studio de création de l’école de cirque de Fontenay Sous Bois par M. Italo Médini, ancien jongleur international.<br /><br />
+		{{> show}}
 
-						Inspiré par le cirque, le théâtre de rue et la farce
-						comique, c’est en 2007 qu’il crée son spectacle solo s’orientant ainsi vers les arts de la rue.<br /><br />
+		{{> gallery}}
 
-						Mais il participe également avec la compagnie Franco-Sud
-						Américaine Circo Teatro Gaucho au spectacle Circo Criollo.<br /><br />
-						Egalement en duo avec Désiré’N Goma et leur conte Africain Balabala Circus joué en France et en Afrique.
-					</p>
-		
-				</div>
-			</div>
-		
-		</section>
-		
-		<section id="spectacle" class="spectacle">
-		
-			<div class="spectacle-content center">
-		
-				<img src="img/chute.png" width="314" height="510">
-		
-				<div class="texte">
-		
-					<h2>
-						Spectacle	
-					</h2>
-		
-					<p>
-						Le foot ne vous intéresse pas? Ca tombe bien lui-même n’y connaît absolument rien. Jean-Sylvain,
-						arbitre en queue de pie, arbitre VIP, auto-proclamé depuis la veille est en pleine «reconversation»
-						professionnelle, selon ses propres dires!<br /><br />
-
-						Avec ses théories douteuses et sa façon étrange de manipuler les ballons à la main, ce gentil
-						doux-dingue va tenter désespérément de conquérir le public. <br /><br />
-						Séducteur maladroit, bonimenteur
-						né, ce vrai faux arbitre va finalement se transformer en cycliste déjanté, véritable cascadeur
-						américain sur vélo made in China.<br /><br />
-
-						Entre prouesses techniques, gags visuels, improvisation déjantée, jeux de mots tordus et
-						participation du public, ce gag-man véritable VRP du rire est encore plus efficace que le prozac!<br /><br />
-						
-						Spectacle à consommer sans aucune modération!
-					</p>
-		
-				</div>
-		
-			</div>
-		
-		</section>
-		
-		<section id="gallery" class="gallery">
-		
-			<figure class="big">
-				<img src="" width="" height="">
-			</figure>
-		
-			<figure class="little">
-				<img src="" width="" height="">
-			</figure>
-		
-		</section>
 	</div>
 
 </body>
