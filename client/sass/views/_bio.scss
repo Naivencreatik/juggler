@@ -3,7 +3,7 @@
 
 	img {
 		display: inline-block;
-		margin:0 25px 0 0;
+		margin:-34px 25px 0 -250px;
 		vertical-align: middle;
 	}
 
@@ -30,6 +30,7 @@
 	p {
 		width: 470px;
 		color: $white;
+		text-align: justify;
 		@include text-shadow(1px 1px 1px #464646);
 	}
 
