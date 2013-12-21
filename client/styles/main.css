@@ -2295,37 +2295,41 @@ nav a:hover {
   width: 100%;
 }
 /* line 4, ../sass/views/_gallery.scss */
-.gallery .tableCell {
-  text-align: center;
+.gallery .gallery-content {
+  position: relative;
+  padding: 10px;
+  z-index: 1;
 }
-/* line 8, ../sass/views/_gallery.scss */
-.gallery .slide-content {
-  display: inline-block;
-  width: auto;
-  max-width: 1295px;
-  text-align: left;
-}
-/* line 16, ../sass/views/_gallery.scss */
-.gallery .big {
-  width: 500px;
-  height: 100%;
-  display: none;
-}
-/* line 24, ../sass/views/_gallery.scss */
-.gallery .little img {
+/* line 9, ../sass/views/_gallery.scss */
+.gallery .gallery-content figure {
+  display: block;
+  float: left;
   width: 200px;
-  height: 200px;
-  margin: 0 15px 15px 0;
-  background-color: black;
-  border: 2px solid white;
-  cursor: pointer;
-  -webkit-box-shadow: 2px 2px 0 0px #464646;
-  -moz-box-shadow: 2px 2px 0 0px #464646;
-  box-shadow: 2px 2px 0 0px #464646;
+  margin: 0 5px 7px 0;
+  padding-top: 250px;
+  background: #222;
+  border-bottom: 2px solid #ccc;
 }
-/* line 33, ../sass/views/_gallery.scss */
-.gallery .little img:nth-child(6n+6) {
-  margin-right: 0;
+/* line 18, ../sass/views/_gallery.scss */
+.gallery .gallery-content figure figcaption {
+  display: block;
+  height: 105px;
+  padding: 7px 15px;
+  color: #222;
+  background: #fff;
+}
+/* line 25, ../sass/views/_gallery.scss */
+.gallery .gallery-content figure figcaption p {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.3;
+}
+/* line 36, ../sass/views/_gallery.scss */
+.gallery .tableCell {
+  vertical-align: inherit;
+  padding-top: 35px;
 }
 
 /* line 1, ../sass/views/_contact.scss */
