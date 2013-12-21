@@ -21,7 +21,7 @@
 		width: 150%;
 		height: 100%;
 		background-color: darken($color, 10%);
-		@include transform(skewX($orientation + 20) translateX($position - 25));
+		@include transform(skewX($orientation + 15) translateX($position - 25));
 	}
 
 	&:after {
